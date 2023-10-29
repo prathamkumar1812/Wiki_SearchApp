@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="./js/main.js" type="module"></script>
+    <title>SearchName</title>
+
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+    <main>
+        <h1 class="offscree">SearchApp is powered by wiki engine</h1>
+        <section class="serachEntry">
+            <h2 class="offscree">serachEntry</h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">S</span>
+                <span class="red">e</span>
+                <span class="green">a</span>
+                <span class="yellow">r</span>
+                <span class="blue">c</span>
+                <span class="red">h</span>
+                <span class="green">M</span>
+                <span class="yellow">e</span>
+                <span class="exclaim">!</span>
+
+            </div>
+            <form id="serachbar" class="serachbar">
+                <label class="offscree" for="search">Search a term or phrase!</label>
+                <input type="text" id="search" autocomplete="off">
+                <div class="clear button none" id="clear" tabindex="0" role="button" aria-label="clear serach term"><i class="fa-regular fa-circle-xmark" style="color: #a8a3a4;"></i></div>
+                <button class="searchButton" id="searchButton" type="submit" aria-label="Submit button">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #e65c70;"></i>
+                </button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscree">Serach results</h2>
+            <div class="statsbar">
+                <div class="stats" id="stats" aria-live="assertive">
+
+                </div>
+                <div class="serachresults" id="serachresults">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span>Powered by <a href="http://www.wikipedia.com" target="_blank" rel="noopener noreferrer">wikipedia</a><span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+</body>
+
+
+</html>

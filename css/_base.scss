@@ -1,0 +1,76 @@
+$search-bar-border: #e6e6e6;
+$stats-color: #70757a;
+$clear-button-color: #d9d9d9;
+$background-color: #fff;
+$font-color: #000;
+$logo-blue: #4885ed;
+$logo-red: #db3236;
+$logo-yellow: #ffc107;
+$logo-green: #3cba54;
+$link-color: #1a0dab;
+$link-visited-color: #609;
+$link-outline-color: #000;
+$font-stack: "Roboto",
+Arial,
+sans-serif;
+%flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexcoloum {
+    @extend %flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+@mixin flexcenter {
+    @extend %flex;
+    justify-content: center;
+}
+
+@mixin media($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    background-color: $background-color;
+    color: $font-color;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: $font-stack;
+    font-size: 22px;
+}
+
+main {
+    @include flexcoloum;
+    min-height: calc(100vh - 60px);
+}
+
+footer {
+    width: 400%;
+    height: 60px;
+    @include flexcenter;
+    p {
+        color: $stats-color;
+        font-size: 0.5rem;
+        @include media(768px) {
+            font-size: 1rem;
+        }
+        a {
+            color: $stats-color;
+        }
+    }
+}
+
+img {
+    display: block;
+}
